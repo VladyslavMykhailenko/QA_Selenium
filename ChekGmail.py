@@ -14,11 +14,11 @@ driver.get("https://www.google.com/account/about/")
 driver.maximize_window()
 delay()  # simulate long running test
 driver.find_element(By.PARTIAL_LINK_TEXT, "Go to Google Account").click()
-driver.find_element(By.ID, "identifierId").send_keys("qat0368@gmail.com")
+driver.find_element(By.ID, "identifierId").send_keys("INPUT_LOGIN")
 delay()  # simulate long running test
 driver.find_element(By.XPATH, "//*[text()='Next']").click()
 delay()  # simulate long running test
-driver.find_element(By.XPATH, "//*[@type='password']").send_keys("gfhjkmgfhjkm!`")
+driver.find_element(By.XPATH, "//*[@type='password']").send_keys("INPUT_PASSWORD")
 delay()  # simulate long running test
 driver.find_element(By.XPATH, "//*[text()='Next']").click()
 delay()  # simulate long running test
